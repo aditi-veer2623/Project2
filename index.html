@@ -6,6 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p>
+        Git commands:
+        add : git add . <!--this . (shows all are included) u can also write file name-->
+        commit : git commit -m "message" <!--message is mandatory (Whatever changes included u can write here)-->
+        push : git push origin main <!--origin is the remote name and main is the branch name-->
+        git status : git status <!--shows the status of the files-->
+        if in case u create a  local file (file in vscode or any other editor) u cant push it directly to the github.
+        for that first u need to create a repository in github (in ur profile) and then u need to copy that repository link, 
+        1. git remote add origin "link" <!--this is the link of the repository paste it here in "link"-->
+        2. git remote -v <!--to verify-->
+        3. git branch <!--so here earlier branch name is master and u have to rename it as main-->
+        4. git branch -m main <!--(name has changed to main now) -->
+
+        also if u want to add and commit it together then u can use this command:
+        git commit -am "message" <!--this will add and commit together-->
+        for only add u can do either of the following:
+        git add . 
+        git commit -a
+
+        for only commit u can do:
+        git commit -m "message"
+
+        for only push u can do:
+        git push origin main
+
+       also if u write git push -u origin main then u dont need to write origin main again and again. -u is used to set the upstream.
+       after writing this u can directly write git push(instead of git push origin main) and it will push the changes to the main branch because
+       after setting upstream -u (means origin or the place where data has sent is seted) so after that just wriying git push is enough.
+    </p>
 </body>
 </html>
